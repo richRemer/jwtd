@@ -1,0 +1,12 @@
+{
+  "name": "jwtd",
+  "version": "0.0.1",
+  "description": "JWT authentication daemon",
+  "type": "module",
+  "bin": "./bin/jwtd.js",
+  "author": "Richard Remer <reanjr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
