@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jwtd
+  labels:
+    app: jwtd
+spec:
+  selector:
+    matchLabels:
+      app: jwtd
+  template:
+    metadata:
+      labels:
+        app: jwtd
+    spec:
+      containers:
+      - name: jwtd
+        image: docker.io/library/jwtd:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 4111
