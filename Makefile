@@ -21,6 +21,6 @@ k8s:
 	kubectl apply -Rf $(k8sdir)
 
 minikube-load:
-	docker save jwtd | minikube image load -
+	docker save jwtd:latest | minikube image load -
 
 .PHONY: default version docker
